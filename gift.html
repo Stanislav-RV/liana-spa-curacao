@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="gc.title">Massage Gift Card Curaçao — Liana Spa</title>
+<meta name="description" data-i18n="gc.sub" content="The perfect gift of relaxation, restored balance and wellbeing.">
+<meta name="theme-color" content="#BE5F70">
+
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body class="page">
+
+<div class="topbar">
+  <div data-lang-switcher></div>
+</div>
+
+<header class="page-head">
+  <a class="page-back" href="index.html" data-icon="arrowL" data-i18n-attr="aria-label:book.back"></a>
+  <img class="page-logo" src="assets/img/logo.webp" alt="Liana Spa" width="798" height="896">
+  <h1 class="page-title" data-i18n="gc.title">Massage Gift Card Curaçao</h1>
+  <p class="page-sub" data-i18n="gc.sub">The perfect gift of relaxation, restored balance and wellbeing.</p>
+</header>
+
+<nav class="stepper stepper--3" id="stepper" aria-label="Progress">
+  <div class="step is-active" data-step="1"><span class="step__dot">1</span><span data-i18n="gc.step1">Choose a massage</span></div>
+  <div class="step" data-step="2"><span class="step__dot">2</span><span data-i18n="gc.step2">Gift card details</span></div>
+  <div class="step" data-step="3"><span class="step__dot">3</span><span data-i18n="gc.step3">Send your request</span></div>
+</nav>
+
+<main class="container container--mid" id="main">
+
+  <form id="gift-form" novalidate>
+
+    <!-- 1 · massage ------------------------------------------------------ -->
+    <section class="block">
+      <div class="block__head">
+        <span class="block__num">1</span>
+        <div>
+          <h2 class="block__title" data-i18n="gc.step1">Choose a massage</h2>
+          <p class="block__sub" data-i18n="gc.step1.sub">Select the massage, duration and value for your gift card.</p>
+        </div>
+      </div>
+
+      <div class="card card--flush" id="service-picker"></div>
+
+      <div class="notice">
+        <span class="notice__icon" data-icon="gift" aria-hidden="true"></span>
+        <span data-i18n="gc.bday">Birthday recipient receives 10% extra massage time.</span>
+      </div>
+    </section>
+
+    <!-- 2 · details ------------------------------------------------------ -->
+    <section class="block">
+      <div class="block__head">
+        <span class="block__num">2</span>
+        <div>
+          <h2 class="block__title" data-i18n="gc.step2">Gift card details</h2>
+          <p class="block__sub" data-i18n="gc.step2.sub">Tell us who the gift card is for and how to contact you.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="fields">
+          <div class="field" data-field="recipient">
+            <label for="g-recipient" data-i18n="gc.recipient">Recipient’s name</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="user" aria-hidden="true"></span>
+              <input id="g-recipient" name="recipient" type="text"
+                     data-i18n-attr="placeholder:gc.recipient.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="name">
+            <label for="g-name" data-i18n="gc.yourname">Your name</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="user" aria-hidden="true"></span>
+              <input id="g-name" name="name" type="text" autocomplete="name"
+                     data-i18n-attr="placeholder:gc.yourname.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="g-phone" data-i18n="gc.phone">Your Phone / WhatsApp</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="phone" aria-hidden="true"></span>
+              <input id="g-phone" name="phone" type="tel" autocomplete="tel"
+                     data-i18n-attr="placeholder:gc.phone.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="g-email" data-i18n="gc.email">Your E-mail</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="mail" aria-hidden="true"></span>
+              <input id="g-email" name="email" type="email" autocomplete="email"
+                     data-i18n-attr="placeholder:gc.email.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="message">
+            <label for="g-message" data-i18n="gc.message">Optional message (for the recipient)</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="pencil" aria-hidden="true"></span>
+              <textarea id="g-message" name="message" maxlength="150"
+                        data-i18n-attr="placeholder:gc.message.ph"></textarea>
+              <span class="field__count" id="g-count">0 / 150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · send --------------------------------------------------------- -->
+    <section class="block">
+      <div class="block__head">
+        <span class="block__num">3</span>
+        <div>
+          <h2 class="block__title" data-i18n="gc.step3">Send your request</h2>
+          <p class="block__sub" data-i18n="gc.step3.sub">We will contact you to discuss and confirm the details.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <dl class="summary" id="summary"></dl>
+      </div>
+
+      <div class="notice notice--error" id="form-error" hidden></div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn">
+          <span class="arrow" data-icon="gift"></span>
+          <span data-i18n="gc.submit">Request gift card</span>
+        </button>
+      </div>
+
+      <div class="notice notice--ok">
+        <span class="notice__icon" data-icon="cash" aria-hidden="true"></span>
+        <span>
+          <strong data-i18n="gc.cash">Payment is made in cash.</strong>
+          <span data-i18n="gc.cash.sub">No online payment required.</span>
+        </span>
+      </div>
+    </section>
+
+  </form>
+
+  <!-- success ------------------------------------------------------------ -->
+  <div class="done" id="done" hidden>
+    <span class="done__ring" data-icon="check" aria-hidden="true"></span>
+    <h2 data-i18n="gc.done.title">Thank you! Your gift card request has been sent.</h2>
+    <p data-i18n="gc.done.text">Liana will contact you to confirm the details.</p>
+    <dl class="summary card" id="done-summary" style="text-align:left;margin-top:22px"></dl>
+    <div class="notice notice--ok">
+      <span class="notice__icon" data-icon="cash" aria-hidden="true"></span>
+      <span>
+        <strong data-i18n="gc.cash">Payment is made in cash.</strong>
+        <span data-i18n="gc.cash.sub">No online payment required.</span>
+      </span>
+    </div>
+    <p style="margin-top:16px;font-size:12.5px" data-i18n="book.demo">Demo mode.</p>
+    <a class="btn btn--ghost" href="index.html">
+      <span data-i18n="book.done.again">Back to home</span><span class="arrow" data-icon="arrow"></span>
+    </a>
+  </div>
+
+</main>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/picker.js"></script>
+<script src="js/gift.js"></script>
+</body>
+</html>

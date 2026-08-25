@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="book.title">Book Your Massage — Liana Spa</title>
+<meta name="description" data-i18n="book.sub" content="Book your massage at Liana Spa in Curaçao.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#BE5F70">
+
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body class="page">
+
+<div class="topbar">
+  <div data-lang-switcher></div>
+</div>
+
+<header class="page-head">
+  <a class="page-back" href="index.html" data-icon="arrowL" data-i18n-attr="aria-label:book.back"></a>
+  <h1 class="page-title" data-i18n="book.title">Book Your Massage</h1>
+  <p class="page-sub" data-i18n="book.sub">Relax, restore and find your balance in Curaçao.</p>
+</header>
+
+<nav class="stepper" id="stepper" aria-label="Progress">
+  <div class="step is-active" data-step="1"><span class="step__dot">1</span><span data-i18n="book.step1">Service</span></div>
+  <div class="step" data-step="2"><span class="step__dot">2</span><span data-i18n="book.step2">Date &amp; Time</span></div>
+  <div class="step" data-step="3"><span class="step__dot">3</span><span data-i18n="book.step3">Your Details</span></div>
+  <div class="step" data-step="4"><span class="step__dot">4</span><span data-i18n="book.step4">Confirmation</span></div>
+</nav>
+
+<main class="container container--mid" id="main">
+
+  <form id="booking-form" novalidate>
+
+    <!-- 1 · service ------------------------------------------------------ -->
+    <section class="block" id="block-1">
+      <div class="block__head">
+        <span class="block__num">1</span>
+        <h2 class="block__title" data-i18n="book.s1.title">Choose your massage, duration and price</h2>
+      </div>
+      <div class="card card--flush" id="service-picker"></div>
+    </section>
+
+    <!-- 2 · date & time -------------------------------------------------- -->
+    <section class="block" id="block-2">
+      <div class="block__head">
+        <span class="block__num">2</span>
+        <h2 class="block__title" data-i18n="book.s2.title">Choose your date and time</h2>
+      </div>
+
+      <div class="card">
+        <div class="picker">
+          <div class="cal">
+            <div class="cal__bar">
+              <button type="button" class="cal__nav" id="cal-prev" data-icon="arrowL" aria-label="Previous month"></button>
+              <span class="cal__month" id="cal-month"></span>
+              <button type="button" class="cal__nav" id="cal-next" data-icon="arrow" aria-label="Next month"></button>
+            </div>
+            <div class="cal__grid" id="cal-grid"></div>
+          </div>
+
+          <div class="slots">
+            <p class="slots__title" id="slots-title" data-i18n="book.slots.pick">Select a date to see available times.</p>
+            <div class="slots__grid" id="slots-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · details ------------------------------------------------------ -->
+    <section class="block" id="block-3">
+      <div class="block__head">
+        <span class="block__num">3</span>
+        <h2 class="block__title" data-i18n="book.s3.title">Your details</h2>
+      </div>
+
+      <div class="card">
+        <div class="fields">
+          <div class="field" data-field="name">
+            <label for="f-name" data-i18n="book.name">Name</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="user" aria-hidden="true"></span>
+              <input id="f-name" name="name" type="text" autocomplete="name"
+                     data-i18n-attr="placeholder:book.name.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="f-email" data-i18n="book.email">E-mail</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="mail" aria-hidden="true"></span>
+              <input id="f-email" name="email" type="email" autocomplete="email"
+                     data-i18n-attr="placeholder:book.email.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="f-phone" data-i18n="book.phone">Phone / WhatsApp</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="phone" aria-hidden="true"></span>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel"
+                     data-i18n-attr="placeholder:book.phone.ph" required>
+            </div>
+          </div>
+
+          <div class="field" data-field="notes">
+            <label for="f-notes" data-i18n="book.notes">Notes (optional)</label>
+            <div class="field__wrap">
+              <span class="field__icon" data-icon="pencil" aria-hidden="true"></span>
+              <textarea id="f-notes" name="notes" maxlength="300"
+                        data-i18n-attr="placeholder:book.notes.ph"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · confirmation ------------------------------------------------- -->
+    <section class="block" id="block-4">
+      <div class="block__head">
+        <span class="block__num">4</span>
+        <h2 class="block__title" data-i18n="book.s4.title">Confirmation</h2>
+      </div>
+
+      <div class="card">
+        <div class="confirm">
+          <div class="confirm__badge">
+            <span class="confirm__ring" data-icon="check" aria-hidden="true"></span>
+            <h3 data-i18n="book.done.title">Your appointment is confirmed!</h3>
+            <p data-i18n="book.done.text">We look forward to welcoming you.</p>
+          </div>
+
+          <dl class="summary" id="summary"></dl>
+        </div>
+
+        <div class="notice">
+          <span class="notice__icon" data-icon="cash" aria-hidden="true"></span>
+          <span>
+            <strong data-i18n="book.cash">Payment is made in cash at your appointment.</strong>
+            <span data-i18n="book.cash.sub">Online payment is not available.</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="notice notice--error" id="form-error" hidden></div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn">
+          <span data-i18n="book.submit">Confirm booking</span><span class="arrow" data-icon="arrow"></span>
+        </button>
+      </div>
+    </section>
+
+  </form>
+
+  <!-- success ------------------------------------------------------------ -->
+  <div class="done" id="done" hidden>
+    <span class="done__ring" data-icon="check" aria-hidden="true"></span>
+    <h2 data-i18n="book.done.title">Your appointment is confirmed!</h2>
+    <p data-i18n="book.done.text">We look forward to welcoming you.</p>
+    <dl class="summary card" id="done-summary" style="text-align:left;margin-top:22px"></dl>
+    <div class="notice notice--ok">
+      <span class="notice__icon" data-icon="cash" aria-hidden="true"></span>
+      <span>
+        <strong data-i18n="book.cash">Payment is made in cash at your appointment.</strong>
+        <span data-i18n="book.cash.sub">Online payment is not available.</span>
+      </span>
+    </div>
+    <p style="margin-top:16px;font-size:12.5px" data-i18n="book.demo">Demo mode.</p>
+    <a class="btn btn--ghost" href="index.html">
+      <span data-i18n="book.done.again">Back to home</span><span class="arrow" data-icon="arrow"></span>
+    </a>
+  </div>
+
+</main>
+
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+<script src="js/picker.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>

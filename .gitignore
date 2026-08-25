@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Vercel
+.vercel
+
+# Editors
+.idea/
+.vscode/
+*.swp

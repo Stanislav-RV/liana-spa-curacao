@@ -202,25 +202,7 @@ dl, dd, dt { margin: 0; }
   color: var(--ink-soft);
 }
 
-/* Decorative dividers ---------------------------------------------------- */
-
-.divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin: 0 auto 34px;
-  max-width: 320px;
-  color: var(--rose-deep);
-}
-.divider::before,
-.divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line-rose);
-}
-.divider svg { width: 30px; height: 30px; opacity: .85; }
+/* Short rule under a section heading ------------------------------------- */
 
 .rule-short {
   width: 62px; height: 1px;
@@ -608,14 +590,6 @@ dl, dd, dt { margin: 0; }
 
 .intro__body { max-width: 56ch; margin-inline: auto; }
 .intro__body p { font-size: clamp(15px, 2.1vw, 17px); line-height: 1.86; }
-
-.intro__sign {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 22px;
-  color: var(--rose-deep);
-  margin-top: 26px;
-}
 
 /* ==========================================================================
    Gallery carousel

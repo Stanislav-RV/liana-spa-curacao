@@ -29,7 +29,6 @@ window.I18N = {
 
     'intro.p1':          'Hi! I’m Liana — your certified massage therapist in Curaçao who combines traditional techniques with modern insights to effectively address tension, stress, and muscle complaints.',
     'intro.p2':          'Whether you come for deep muscle relaxation, recovery after an intensive workout, or simply a quiet moment for yourself, I make sure every treatment is tailored to your needs.',
-    'intro.sign':        '— Liana',
     'intro.alt':         'Liana, certified massage therapist in Curaçao',
 
     'gallery.title':     'Inside Liana Spa',
@@ -182,7 +181,6 @@ window.I18N = {
 
     'intro.p1':          'Hoi! Ik ben Liana — jouw gecertificeerde massagetherapeut op Curaçao. Ik combineer traditionele technieken met moderne inzichten om spanning, stress en spierklachten effectief aan te pakken.',
     'intro.p2':          'Of je nu komt voor diepe spierontspanning, herstel na een intensieve training, of gewoon een rustig moment voor jezelf — ik zorg ervoor dat elke behandeling is afgestemd op jouw wensen.',
-    'intro.sign':        '— Liana',
     'intro.alt':         'Liana, gecertificeerde massagetherapeut op Curaçao',
 
     'gallery.title':     'Binnen bij Liana Spa',
@@ -331,7 +329,6 @@ window.I18N = {
 
     'intro.p1':          '¡Hola! Soy Liana — tu masajista certificada en Curazao. Combino técnicas tradicionales con conocimientos modernos para tratar de forma eficaz la tensión, el estrés y las molestias musculares.',
     'intro.p2':          'Ya vengas por una relajación muscular profunda, por recuperarte tras un entrenamiento intenso o simplemente por un momento de calma para ti, me aseguro de que cada tratamiento se adapte a tus necesidades.',
-    'intro.sign':        '— Liana',
     'intro.alt':         'Liana, masajista certificada en Curazao',
 
     'gallery.title':     'Dentro de Liana Spa',
@@ -480,7 +477,6 @@ window.I18N = {
 
     'intro.p1':          'Hallo! Mi ta Liana — bo terapeut di masahe sertifiká na Kòrsou. Mi ta kombiná téknika tradishonal ku konosementu moderno pa trata tenshon, strès i keho di muskulo di manera efektivo.',
     'intro.p2':          'Sea bo ta bini pa un relahashon profundo di muskulo, pa rekuperá despues di un entrenamentu intensivo, of simplemente pa un momento trankil pa bo mes — mi ta sòru pa kada tratamentu ta adaptá na bo nesesidat.',
-    'intro.sign':        '— Liana',
     'intro.alt':         'Liana, terapeut di masahe sertifiká na Kòrsou',
 
     'gallery.title':     'Paden di Liana Spa',
